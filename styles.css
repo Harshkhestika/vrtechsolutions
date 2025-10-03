@@ -143,51 +143,13 @@ body {
     }
 }
 
-/* Card Styles
-.stat-card {
-    background: white;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-}
-
-.stat-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial-card {
-    background: white;
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    position: relative;
-    transition: all 0.3s ease;
-}
-
-.testimonial-card::before {
-    content: '"';
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    font-size: 5rem;
-    color: var(--primary);
-    opacity: 0.1;
-    font-family: Georgia, serif;
-}
-
-.testimonial-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-} */
 
 
 
 /* Distributor Slider */
 .distributor-slider {
     overflow: hidden;
-    position: relative;
+    position: sticky;
 }
 
 .slider-container {
@@ -734,3 +696,453 @@ select:focus {
         }
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Responsive CSS Fixes for VR Tech Solution */
+
+/* Base responsive adjustments */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Mobile-first responsive breakpoints */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Header responsive fixes */
+@media (max-width: 1023px) {
+  .lg\\:flex {
+    display: none !important;
+  }
+  
+  .hidden.md\\:flex {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\\:hidden {
+    display: none !important;
+  }
+}
+
+/* Mobile menu improvements */
+.mobile-menu {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+/* Hero section responsive fixes */
+@media (max-width: 767px) {
+  .hero-height {
+    min-height: 70vh !important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .text-4xl, .text-5xl, .text-6xl {
+    font-size: 1.875rem !important;
+    line-height: 2.25rem !important;
+  }
+  
+  .text-xl {
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
+  }
+  
+  .grid.md\\:grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .flex.flex-col.sm\\:flex-row {
+    flex-direction: column !important;
+  }
+  
+  .flex.flex-col.sm\\:flex-row .btn-primary {
+    margin-bottom: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Hero slider mobile fixes */
+  .hero-slides {
+    height: 300px !important;
+    margin-top: 1rem;
+  }
+  
+  .slide {
+    height: 100% !important;
+    top: 0 !important;
+  }
+}
+
+/* Stats section responsive */
+@media (max-width: 767px) {
+  .grid.grid-cols-2.md\\:grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+  
+  .stat-card {
+    padding: 1rem 0.5rem;
+  }
+  
+  .text-3xl {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+  }
+}
+
+/* About section responsive */
+@media (max-width: 767px) {
+  .grid.md\\:grid-cols-2 {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  
+  .grid.grid-cols-2 {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  
+  .text-3xl.md\\:text-4xl {
+    font-size: 1.875rem !important;
+    line-height: 2.25rem !important;
+  }
+}
+
+/* Product sliders responsive fixes */
+@media (max-width: 767px) {
+  .product-slider .slider-container {
+    padding: 0 10px !important;
+  }
+  
+  .slider-prev, .slider-next {
+    width: 35px !important;
+    height: 35px !important;
+  }
+  
+  .slider-prev {
+    left: 0 !important;
+  }
+  
+  .slider-next {
+    right: 0 !important;
+  }
+  
+  .product-card {
+    min-width: 260px !important;
+    max-width: 260px !important;
+  }
+  
+  .distributor-card {
+    min-width: 150px !important;
+  }
+}
+
+/* Career section responsive */
+@media (max-width: 767px) {
+  .grid.md\\:grid-cols-2.lg\\:grid-cols-3 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Contact section responsive */
+@media (max-width: 767px) {
+  .grid.md\\:grid-cols-2 {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  
+  .grid.md\\:grid-cols-2.gap-4 {
+    grid-template-columns: 1fr !important;
+  }
+  
+  form input, form textarea, form select {
+    width: 100% !important;
+  }
+}
+
+/* Location section responsive */
+@media (max-width: 767px) {
+  .grid.md\\:grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+  
+  iframe {
+    width: 100% !important;
+    height: 300px !important;
+  }
+  
+  .grid.grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+/* Footer responsive */
+@media (max-width: 767px) {
+  .grid.md\\:grid-cols-2.lg\\:grid-cols-4 {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem !important;
+  }
+}
+
+/* Button and icon responsive fixes */
+@media (max-width: 767px) {
+  .btn-primary img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  
+  .floating-chat {
+    width: 50px !important;
+    height: 50px !important;
+    bottom: 20px !important;
+    left: 20px !important;
+  }
+  
+  .back-to-top {
+    width: 45px !important;
+    height: 45px !important;
+    bottom: 20px !important;
+    right: 20px !important;
+  }
+}
+
+/* Text size adjustments for mobile */
+@media (max-width: 767px) {
+  .text-2xl {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+  }
+  
+  .text-lg {
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
+  }
+  
+  p {
+    font-size: 0.95rem !important;
+    line-height: 1.5rem !important;
+  }
+}
+
+/* Padding and margin adjustments for mobile */
+@media (max-width: 767px) {
+  .section-padding {
+    padding: 3rem 0 !important;
+  }
+  
+  .py-12 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  
+  .mb-16 {
+    margin-bottom: 3rem !important;
+  }
+  
+  .mb-8 {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .mb-6 {
+    margin-bottom: 1rem !important;
+  }
+  
+  .mb-4 {
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .space-y-6 > * + * {
+    margin-top: 1rem !important;
+  }
+  
+  .p-6 {
+    padding: 1rem !important;
+  }
+  
+  .p-8 {
+    padding: 1.5rem !important;
+  }
+}
+
+/* Image responsive fixes */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix for distributor logos on mobile */
+@media (max-width: 767px) {
+  .distributor-card .h-20.w-20 {
+    height: 60px !important;
+    width: 60px !important;
+  }
+}
+
+/* Fix for product card images on mobile */
+@media (max-width: 767px) {
+  .product-image img {
+    height: 180px !important;
+  }
+}
+
+/* Utility classes for better mobile experience */
+.mobile-text-center {
+  text-align: center;
+}
+
+.mobile-full-width {
+  width: 100% !important;
+}
+
+.mobile-stack {
+  flex-direction: column !important;
+}
+
+.mobile-mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mobile-mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+/* Ensure proper viewport scaling */
+@media (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Prevent horizontal scrolling */
+body {
+  overflow-x: hidden;
+}
+
+/* Improve touch targets for mobile */
+@media (max-width: 767px) {
+  .nav-link, .btn-primary, .btn-outline {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  select, input, textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+/* Add these styles to your existing CSS file */
+
+/* Additional responsive fixes for very small screens */
+@media (max-width: 480px) {
+  .container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  .hero-height {
+    min-height: 60vh !important;
+  }
+  
+  .text-4xl, .text-5xl, .text-6xl {
+    font-size: 1.5rem !important;
+  }
+  
+  .product-card {
+    min-width: 220px !important;
+    max-width: 220px !important;
+  }
+  
+  .grid.grid-cols-3 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .stat-card .text-3xl {
+    font-size: 1.25rem !important;
+  }
+}
+
+/* Fix for the hero buttons layout on very small screens */
+@media (max-width: 380px) {
+  .flex.flex-col.sm\\:flex-row .btn-primary {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+  
+  .btn-primary img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
+
+   
