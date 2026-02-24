@@ -33,7 +33,7 @@ function initializeNavigation() {
         document.body.style.overflow = 'auto';
     });
 
-    // Close mobile menu when clicking on links
+    // Close mobile menu when clicking on links.
     const mobileMenuLinks = mobileMenu?.querySelectorAll('a');
     mobileMenuLinks?.forEach(link => {
         link.addEventListener('click', () => {
