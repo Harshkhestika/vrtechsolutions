@@ -1,4 +1,5 @@
 // Global variables
+
 let currentSlideIndex = {};
 let autoSlideIntervals = {};
 let isUserInteracting = {};
