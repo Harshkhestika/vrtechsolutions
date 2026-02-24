@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeLocationFeatures();
 });
 
+
 // Navigation functionality 
 function initializeNavigation() {
     const mobileMenuButton = document.getElementById('mobileMenuButton');
