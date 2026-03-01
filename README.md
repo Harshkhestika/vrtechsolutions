@@ -3,7 +3,7 @@ website name -> "vrtechsolution.in"  Revenue generation
 
 ## Project Overview
 
-A modern, responsive, and user-friendly website for VR Tech Solution - a leading wholesale distributor of professional-grade industrial tools and equipment. The website features automatic sliding product carousels, advanced animations, and enhanced user experience elements
+A modern, responsive, and user-friendly website for VR Tech Solution - a leading wholesale distributor of professional-grade industrial tools and equipment. The website features automatic sliding product carousels, advanced animations, and enhanced user experience elements.
 
 ## 🚀 Key Features Implemented
 
