@@ -7,7 +7,7 @@ let isUserInteracting = {} ;
 
 
 
-// Initialize the website
+// Initialize the website...
 document.addEventListener('DOMContentLoaded', function () {
     initializeSliders();
     initializeNavigation();
