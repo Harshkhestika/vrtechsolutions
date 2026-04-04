@@ -5,6 +5,7 @@ let autoSlideIntervals = {};
 let isUserInteracting = {} ;
 
 
+
 // Initialize the website...
 document.addEventListener('DOMContentLoaded', function () {
     initializeSliders();
