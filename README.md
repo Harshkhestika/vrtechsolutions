@@ -14,7 +14,7 @@ A modern, responsive, and user-friendly website for VR Tech Solution - a leading
 - Gradient background with professional styling
 - Animated content with Animate.css integration
 - Responsive design for all device sizes
-- Call-to-action buttons with hover effects
+- Call-to-action buttons with hover effects 
 
 #### 2. **Automatic Product Sliders**
 - **5 Product Category Sections** with automatic sliding:
