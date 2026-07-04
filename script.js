@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeForms();
     initializeChat();
     initializeLocationFeatures(); 
-});
+}); 
 
 
 // Navigation functionality 
