@@ -1,7 +1,7 @@
 // Global variables
 let currentSlideIndex = {};
 let autoSlideIntervals = {};
-let isUserInteracting = {} ;
+let isUserInteracting = {} ; 
 
  
 // Initialize the website...
