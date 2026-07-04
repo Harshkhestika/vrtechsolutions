@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeAnimations();
     initializeForms(); 
     initializeChat();
-    initializeLocationFeatures();  
+    initializeLocationFeatures();   
 }); 
 
 
