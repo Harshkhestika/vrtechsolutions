@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeChat();
     initializeLocationFeatures();   
 }); 
-
+ 
  
 // Navigation functionality   
 function initializeNavigation() {
