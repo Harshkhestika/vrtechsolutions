@@ -8,7 +8,7 @@ let isUserInteracting = {} ;
 document.addEventListener('DOMContentLoaded', function () {
     initializeSliders();
     initializeNavigation();   
-    initializeScrollEffects();
+    initializeScrollEffects(); 
     initializeAnimations();   
     initializeForms();  
     initializeChat();  
