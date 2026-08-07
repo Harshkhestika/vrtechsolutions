@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeSliders();
     initializeNavigation();   
     initializeScrollEffects();
-    initializeAnimations(); 
+    initializeAnimations();  
     initializeForms(); 
     initializeChat(); 
     initializeLocationFeatures();      
